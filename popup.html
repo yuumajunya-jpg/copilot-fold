@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Copilot Fold</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <h1>Copilot Fold</h1>
+  <p>回答をひとつだけ開いて、会話を軽く。</p>
+  <label class="switch"><span>自動で折りたたむ</span><input id="enabled" type="checkbox"></label>
+  <p id="status" role="status" aria-live="polite">確認中…</p>
+  <button id="latest" type="button">最新の回答を開く</button>
+  <details><summary>回答が検出されない場合</summary>
+    <p>Copilotの画面変更に対応するため、回答ひとつ分を指すCSSセレクターを指定できます。空欄で標準に戻ります。</p>
+    <label for="selector">回答のセレクター</label>
+    <input id="selector" type="text" placeholder='[data-content="ai-message"]' spellcheck="false">
+    <button id="save" type="button">設定を保存</button>
+    <p id="feedback" role="status"></p>
+  </details>
+  <footer>会話の外部送信・保存はしません。</footer>
+  <script src="popup.js"></script>
+</body></html>

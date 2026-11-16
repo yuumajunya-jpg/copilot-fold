@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Copilot Fold",
+  "version": "1.0.3",
+  "description": "Copilotの回答を折りたたみ、最新または選択した回答だけを表示します。",
+  "permissions": ["storage"],
+  "action": { "default_title": "Copilot Fold", "default_popup": "popup.html" },
+  "content_scripts": [{
+    "matches": ["https://copilot.microsoft.com/*", "https://copilot.com/*", "https://www.copilot.com/*"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }]
+}

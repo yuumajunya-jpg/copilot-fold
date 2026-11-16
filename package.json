@@ -1,0 +1,13 @@
+{
+  "name": "copilot-fold",
+  "version": "1.0.3",
+  "private": true,
+  "description": "Fold Microsoft Copilot responses and keep one answer open at a time.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check content.js && node --check popup.js",
+    "package": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1"
+  },
+  "devDependencies": { "jsdom": "^26.1.0" }
+}

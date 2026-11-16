@@ -1,0 +1,26 @@
+[data-copilot-fold-closed="true"] {
+  display: none !important;
+}
+.copilot-fold-toggle {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 40px;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: 500 13px/1.5 system-ui, sans-serif;
+  text-align: left;
+  cursor: pointer;
+  overflow-anchor: none;
+}
+.copilot-fold-toggle:hover { background: color-mix(in srgb, currentColor 7%, transparent); }
+.copilot-fold-toggle:focus-visible { outline: 2px solid #5085ee; outline-offset: 2px; }
+.copilot-fold-arrow { flex: 0 0 auto; }
+.copilot-fold-label { flex: 0 0 auto; }
+.copilot-fold-preview { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; opacity: .65; font-weight: 400; }

@@ -1,0 +1,13 @@
+:root { color-scheme: light dark; font: 13px/1.6 system-ui, sans-serif; }
+body { width: 310px; margin: 0; padding: 22px; }
+h1 { font-size: 20px; margin: 0; }
+p { opacity: .8; }
+.switch { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; font-weight: 600; }
+input[type="checkbox"] { width: 20px; height: 20px; accent-color: #4776d8; }
+button { width: 100%; padding: 10px; border: 0; border-radius: 8px; background: #3567cf; color: white; font: inherit; cursor: pointer; }
+button:disabled { opacity: .5; cursor: default; }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid #759fff; outline-offset: 3px; }
+details { margin-top: 20px; }
+summary { cursor: pointer; }
+input[type="text"] { box-sizing: border-box; width: 100%; margin: 6px 0 12px; padding: 8px; border: 1px solid #888; border-radius: 6px; }
+footer { margin-top: 20px; font-size: 11px; opacity: .6; }

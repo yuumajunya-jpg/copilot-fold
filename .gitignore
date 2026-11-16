@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.zip
+investigation.md
+.env
+.env.*
+*.log
